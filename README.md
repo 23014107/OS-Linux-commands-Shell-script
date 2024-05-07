@@ -564,6 +564,7 @@ www.yahoo.com www.google.com www.mrcet.com
 #Backup commands tar -cvf backup.tar *
 
 # OUTPUT
+```
 bench.py file1 file11 file2 file21 file22 file23 hello.c hello.js newfile readme.txt urllist.txt
 
 mkdir backupdir
@@ -571,11 +572,14 @@ mkdir backupdir
 mv backup.tar backupdir
 
 tar -tvf backup.tar
+```
 
 # OUTPUT
+```
 x file1.txt x directory1/ x directory1/file2.txt x directory1/file3.txt gzip backup.tar
 
 ls .gz
+```
 
 # OUTPUT
 backup.tar.gz gunzip backup.tar.gz
@@ -642,17 +646,6 @@ ps
 chmod 777 scriptest.sh
 
 ./scriptest.sh 1 2 3
-
-# OUTPUT
-
-File name is ./scriptest.sh File name is scriptest.sh First arg. is 1 Second arg. is 2 Third arg. is 3 Fourth arg. is The 
-# is
-
-You can't use 'macro parameter character #' in math mode
-$#
-The $$ is 124
-
-ls file1
 
 # OUTPUT
 file1 echo $?
@@ -954,7 +947,8 @@ $ ./casecheck.sh
 
 # OUTPUT
 
-Welcome Ram/Rahim Please enjoy your visit Special testing account gganesh, Do not forget to logout when you're done Sorry, you are not allowed here cat > whiletest
+Welcome Ram/Rahim Please enjoy your visit Special testing account gganesh, 
+Do not forget to logout when you're done Sorry, you are not allowed here cat > whiletest
 
 ```
 #!/bin/bash
@@ -1007,7 +1001,14 @@ $ chmod 755 forin1.sh $ ./forin1.sh
 
 # OUTPUT
 
-The next state is Alabama The next state is Alaska The next state is Arizona The next state is Arkansas The next state is California The next state is Colorado
+```
+The next state is Alabama 
+The next state is Alaska
+The next state is Arizona 
+The next state is Arkansas 
+The next state is California 
+The next state is Colorado
+```
 
 cat forin2.sh
 
@@ -1055,7 +1056,15 @@ $ chmod 777 forinfile.sh $ cat cities Hyderabad Alampur Basara Warangal Adilabad
 ```
 
 # OUTPUT
-Visit beautiful Hyderabad Visit beautiful Alampur Visit beautiful Basara Visit beautiful Warangal Visit beautiful Adilabad Visit beautiful Bhadrachalam Visit beautiful Khammam
+```
+Visit beautiful Hyderabad 
+Visit beautiful Alampur
+Visit beautiful Basara 
+Visit beautiful Warangal
+Visit beautiful Adilabad 
+Visit beautiful Bhadrachalam 
+Visit beautiful Khammam
+```
 
 cat forctype.sh
 
@@ -1070,7 +1079,13 @@ $ chmod 755 forctype.sh $ ./forctype.sh
 ```
 
 # OUTPUT
-The value of i is 1 The value of i is 2 The value of i is 3 The value of i is 4 The value of i is 5
+```
+The value of i is 1 
+The value of i is 2 
+The value of i is 3 
+The value of i is 4 
+The value of i is 5
+```
 
 cat forctype1.sh
 
@@ -1104,13 +1119,13 @@ $ ./fornested1.sh
 ```
 
 # OUTPUT
-
+```
 1 - 5 
 2 - 4 
 3 - 3
 4 - 2 
 5 - 1
-
+```
 cat forbreak.sh
 
 ```
@@ -1132,7 +1147,9 @@ $ ./forbreak.sh
 
 # OUTPUT
 
-Iteration number: 1 Iteration number: 2 The for loop is completed
+Iteration number: 1 
+Iteration number: 2 
+The for loop is completed
 
 cat forcontinue.sh
 
@@ -1154,23 +1171,26 @@ $ ./forcontinue.sh
 ```
 
 # OUTPUT
-
+```
 Iteration number: 
 1 Iteration number: 
 2 Iteration number: 
 4 Iteration number: 
 5 The for loop is completed
+```
 
 cat exread.sh
 
 #!/bin/bash
 # testing the read command
+```
 echo -n "Enter your name: "
 read name
 echo "Hello $name, welcome to my program. "
 $ chmod 755 exread.sh
 
 $ ./exread.sh
+```
 
 # OUTPUT
 
@@ -1243,7 +1263,7 @@ $ chmod 777 argshift.sh
 ```
 
 # OUTPUT
-
+```
 $ ./argshift.sh 1 2 3 1 2 3 cat argshift.sh
 #!/bin/bash 
 set -x 
@@ -1252,7 +1272,10 @@ while (( "$#" )); do
   shift 
 done
 set +x
+```
+
 # OUTPUT
+```
 ./argshift.sh 1 2 3
 
 (( 0 ))
@@ -1270,7 +1293,10 @@ print "total characters",chrcnt
 print "Number of Lines are",NR
 print "No of Words count:",wordcount
 }
+```
+
 cat>data.dat
+```
 
 bcdfghj
 abcdfghj
@@ -1283,6 +1309,7 @@ obcdfghj
 bcdfghj
 ubcdfghj
 awk -f nc.awk data.dat
+```
 
 # OUTPUT
 
