@@ -1,6 +1,8 @@
 # OS-Linux-commands-Shell-scripting
 NAME:RAMYA.P
+
 REGISTER NUMBER:212223240137
+
 DEPARTMENT:AIML
 
 Operating systems Lab exercise
